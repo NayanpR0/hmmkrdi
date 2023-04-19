@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from os import environ
 
-app = Client("AutoForwarder", api_id=int(environ["API_ID"]), api_hash=environ["API_HASH"],
-             phone_number=environ["PHONE_NUMBER"],
-             session_string=environ["SESSION_STRING"]
+app = Client("AutoForwarder", api_id=int(environ["2092870"]), api_hash=environ["d7f5fb245e4c0b489cba4f7b45bc4173"],
+             phone_number=environ["+917501563507"],
+             session_string=environ["BQAf70YAH6LMJOSY5pr51OTjJilyYJibU_bJsMaqUyPaZUhQhcCIUYyBDOM3Pc-hpVjAOOXMN-8xLNiOhExnS4rsN4lQ0V2owAwLZJoTMjm22RZ2OZGqn9WFzUuWgUSCLkPQuBJF6vqN9uc1WbyzJMShCoq5IbGi_WQQyEF3hCucRHTmuVSQKsA1mKmn2IrbI7PXJ9oMLNAzLlr-VpHnfT3NeJDz1uo4zjsQ2T1SKzYiK-u5vP4AhxuryFdWXx3TPI-2bUmWl07KzmGDgWyDIQn3BOLcLf5TGp2Wjqvi0V7bmXt0UFTXMfjTGc48QJlVe50Y1iD9le4JJC5rKXqmSkV4A-CAYQAAAAFMoZQLAA"]
              )
 
 @app.on_message(filters.regex(".start") & filters.me)
