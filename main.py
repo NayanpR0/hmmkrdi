@@ -8,11 +8,11 @@ app = Client("AutoForwarder", api_id=int(environ["API_ID"]), api_hash=environ["A
 
 @app.on_message(filters.regex(".start") & filters.me)
 async def start(app, msg):
-    await msg.reply("<b>Hello I'm A Auto Join Request Accept Bot\n\nMade In India :) By @Walker_web</b>")
+    await msg.reply("<b>Hello I'm A Auto Join Request Accept Bot\n\nMade In India :) By @PiroAyush</b>")
 
-@app.on_message(filters.regex(".run") & filters.me)
+@app.on_message(filters.regex("/accept") & filters.me)
 async def run(app, msg):
-    await msg.reply("<b>Accepting All Requests...</b>")
+    await msg.reply("")
     X = "acceser"
     get = await app.get_messages(chat_id=X, message_ids=3)
     getint = int(get.text)
